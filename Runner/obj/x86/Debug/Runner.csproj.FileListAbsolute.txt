@@ -1,0 +1,5 @@
+D:\Studying\Umbraco\Test sites\UmbracoFramework\Runner\bin\Debug\Runner.exe
+D:\Studying\Umbraco\Test sites\UmbracoFramework\Runner\bin\Debug\Runner.pdb
+D:\Studying\Umbraco\Test sites\UmbracoFramework\Runner\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Studying\Umbraco\Test sites\UmbracoFramework\Runner\obj\x86\Debug\Runner.exe
+D:\Studying\Umbraco\Test sites\UmbracoFramework\Runner\obj\x86\Debug\Runner.pdb
