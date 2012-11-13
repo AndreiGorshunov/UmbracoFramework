@@ -3,3 +3,8 @@ D:\Studying\Umbraco\Test sites\UmbracoFramework\UmbracoFramework\bin\Debug\Umbra
 D:\Studying\Umbraco\Test sites\UmbracoFramework\UmbracoFramework\bin\Debug\UmbracoFramework.pdb
 D:\Studying\Umbraco\Test sites\UmbracoFramework\UmbracoFramework\obj\Debug\UmbracoFramework.dll
 D:\Studying\Umbraco\Test sites\UmbracoFramework\UmbracoFramework\obj\Debug\UmbracoFramework.pdb
+D:\Umbraco\UmbracoFramework\UmbracoFramework\obj\Debug\ResolveAssemblyReference.cache
+D:\Umbraco\UmbracoFramework\UmbracoFramework\obj\Debug\UmbracoFramework.dll
+D:\Umbraco\UmbracoFramework\UmbracoFramework\bin\Debug\UmbracoFramework.dll
+D:\Umbraco\UmbracoFramework\UmbracoFramework\bin\Debug\UmbracoFramework.pdb
+D:\Umbraco\UmbracoFramework\UmbracoFramework\obj\Debug\UmbracoFramework.pdb
