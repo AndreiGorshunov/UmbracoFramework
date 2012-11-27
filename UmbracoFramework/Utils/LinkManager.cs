@@ -13,6 +13,12 @@ namespace UmbracoFramework.Utils
         public static string GetLinkUrl(dynamic linkProperty, out bool isInternal)
         {
             dynamic link = linkProperty.BaseElement.Element("link");
+            if (link == null)
+            {
+                isInternal = true;
+                return "/";
+            }
+
             if (link.Attribute("type").Value == "internal")
             {
                 int relatedNodeId = int.Parse(link.Attribute("link").Value);
@@ -45,14 +51,22 @@ namespace UmbracoFramework.Utils
 
         public static dynamic GetLinkedNode(dynamic linkProperty)
         {
-            dynamic link = linkProperty.BaseElement.Element("link");
-            if (link.Attribute("type").Value == "internal")
+            dynamic node = null;
+            try
             {
-                int relatedNodeId = int.Parse(link.Attribute("link").Value);
-                return new RazorLibraryCore(Node.GetCurrent()).NodeById(relatedNodeId);
+                dynamic link = linkProperty.BaseElement.Element("link");
+                if (link.Attribute("type").Value == "internal")
+                {
+                    int relatedNodeId = int.Parse(link.Attribute("link").Value);
+                    node = new RazorLibraryCore(Node.GetCurrent()).NodeById(relatedNodeId);
+                }
+            }
+            catch (Exception ex)
+            {
+                node = null;
             }
 
-            return null;
+            return node;
         }
 
         public static IEnumerable<dynamic> GetInternalLinkNodes(dynamic linksProperty)
