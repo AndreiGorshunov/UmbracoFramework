@@ -67,6 +67,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\interfaces.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Lucene.Net, Version=2.9.4.1, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Lucene.Net.dll</HintPath>
@@ -187,6 +191,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Diagnostics\Log.cs" />
+    <Compile Include="Diagnostics\Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\LinkManager.cs" />
     <Compile Include="Utils\MediaHelper.cs" />
