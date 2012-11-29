@@ -1,7 +1,28 @@
 <Configuration>
   <RecentFiles>
-    <RecentFiles />
-    <RecentEdits />
+    <RecentFiles>
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Log.cs" caret="43" fromTop="3" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Logger.cs" caret="94" fromTop="4" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:LinkManager.cs" caret="384" fromTop="8" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:SearchHelper.cs" caret="0" fromTop="0" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:MediaHelper.cs" caret="684" fromTop="24" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:LinkManager.cs" caret="771" fromTop="18" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Logger.cs" caret="1067" fromTop="33" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Logger.cs" caret="1070" fromTop="10" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Logger.cs" caret="52" fromTop="2" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Logger.cs" caret="768" fromTop="14" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Logger.cs" caret="371" fromTop="9" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Logger.cs" caret="629" fromTop="17" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Logger.cs" caret="975" fromTop="27" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:LinkManager.cs" caret="1142" fromTop="17" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:LinkManager.cs" caret="384" fromTop="8" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Log.cs" caret="255" fromTop="11" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Log.cs" caret="228" fromTop="9" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Log.cs" caret="58" fromTop="3" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Logger.cs" caret="94" fromTop="4" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -21,4 +42,19 @@
       <setting name="SolutionAnalysisEnabled">False</setting>
     </boolean>
   </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="using" priority="61" />
+      <Item value="log4net" priority="30" />
+      <Item value="Config" priority="26" />
+      <Item value="thr" priority="31" />
+      <Item value="public" priority="31" />
+      <Item value="static" priority="31" />
+      <Item value="void" priority="31" />
+      <Item value="Type`0" priority="31" />
+      <Item value="Exception`0" priority="31" />
+      <Item value="string" priority="31" />
+      <Item value="message" priority="31" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>
