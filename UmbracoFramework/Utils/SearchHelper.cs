@@ -29,5 +29,16 @@ namespace UmbracoFramework.Utils
         {
             return (DynamicNode)GetNodeByName(model, name);
         }
+
+        public static dynamic GetNodeByNameRelative(DynamicNode model, string name)
+        {
+            return model.Descendants(
+                x => string.Compare(x.Name, name, true) == 0).Items.FirstOrDefault();
+        }
+
+        public static DynamicNode GetNodeByNameRelativeStrongTyped(DynamicNode model, string name)
+        {
+            return (DynamicNode)GetNodeByNameRelative(model, name);
+        }
     }
 }

@@ -4,8 +4,8 @@
       <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Log.cs" caret="43" fromTop="3" />
       <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Logger.cs" caret="94" fromTop="4" />
       <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:LinkManager.cs" caret="384" fromTop="8" />
-      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:SearchHelper.cs" caret="0" fromTop="0" />
-      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:MediaHelper.cs" caret="684" fromTop="24" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:MediaHelper.cs" caret="684" fromTop="6" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:SearchHelper.cs" caret="1331" fromTop="22" />
     </RecentFiles>
     <RecentEdits>
       <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:LinkManager.cs" caret="771" fromTop="18" />
@@ -22,6 +22,9 @@
       <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Log.cs" caret="228" fromTop="9" />
       <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Log.cs" caret="58" fromTop="3" />
       <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Diagnostics/f:Logger.cs" caret="94" fromTop="4" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:SearchHelper.cs" caret="928" fromTop="24" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:SearchHelper.cs" caret="1163" fromTop="30" />
+      <File id="6BD2D789-1BC7-4F23-9526-94B111AB5962/d:Utils/f:SearchHelper.cs" caret="1331" fromTop="28" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
