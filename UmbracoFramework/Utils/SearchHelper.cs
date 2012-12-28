@@ -1,4 +1,6 @@
-﻿using umbraco.MacroEngines;
+﻿using umbraco;
+using umbraco.MacroEngines;
+using umbraco.NodeFactory;
 
 namespace UmbracoFramework.Utils
 {
@@ -9,6 +11,15 @@ namespace UmbracoFramework.Utils
 
     public static class SearchHelper
     {
+        private static Node homeNode;
+        public static Node HomeNode
+        {
+            get
+            {
+                return homeNode ?? (homeNode = uQuery.GetNodesByXPath("descendant::*[@nodeName='Home']").FirstOrDefault());
+            }
+        }
+
         public static dynamic GetHomeNode(dynamic model)
         {
             return model.AncestorOrSelf("Home");

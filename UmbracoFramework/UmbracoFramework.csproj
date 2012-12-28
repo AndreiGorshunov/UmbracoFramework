@@ -190,7 +190,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Diagnostics\Log.cs" />
     <Compile Include="Diagnostics\Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
