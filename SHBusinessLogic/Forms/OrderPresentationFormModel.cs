@@ -34,24 +34,28 @@ namespace SHBusinessLogic.Forms
         {
             this.Name = request["name"];
             this.Phone = request["phone"];
+            this.Phone0 = request["phone0"];
             this.City = request["city"];
             this.University = request["university"];
             this.Group = request["group"];
             this.PersonsCount = request["personscount"];
             this.Date = request["date"];
-            this.Time = request["time"];
+            this.TimeHours = request["timehours"];
+            this.TimeMinutes = request["timeminutes"];
             this.Comment = request["comment"];
             this.HoneyPot = request["honeybear"];
         }
 
         public string Name { get; private set; }
+        public string Phone0 { get; private set; }
         public string Phone { get; private set; }
         public string City { get; private set; }
         public string University { get; private set; }
         public string Group { get; private set; }
         public string PersonsCount { get; private set; }
         public string Date { get; private set; }
-        public string Time { get; private set; }
+        public string TimeHours { get; private set; }
+        public string TimeMinutes { get; private set; }
         public string Comment { get; private set; }
         public string HoneyPot { get; private set; }
         public const string SessionKey = "SH.Form.Submitted";
@@ -67,6 +71,11 @@ namespace SHBusinessLogic.Forms
             if (string.IsNullOrEmpty(this.Name))
             {
                 errors.Add("Пожалуйста, заполните поле Ваше имя");
+            }
+
+            if (string.IsNullOrEmpty(this.Phone0))
+            {
+                errors.Add("Пожалуйста, заполните поле Телефон");
             }
 
             if (string.IsNullOrEmpty(this.Phone))
@@ -111,13 +120,13 @@ namespace SHBusinessLogic.Forms
                 Log.Info(this.GetType(), "Subject email: " + mail.Subject);
                 mail.Body = "Была отправлена заявка на презентацию:\n\n"
                             + "Name: " + this.Name + "\n"
-                            + "Phone: " + this.Phone + "\n"
+                            + "Phone: " + "+375 " + this.Phone0 + " " + this.Phone + "\n"
                             + "City: " + this.City + "\n"
                             + "University: " + this.University + "\n"
                             + "Group: " + this.Group + "\n"
                             + "PersonsCount: " + this.PersonsCount + "\n"
                             + "Date: " + this.Date + "\n"
-                            + "Time: " + this.Time + "\n"
+                            + "Time: " + this.TimeHours + ":" + this.TimeMinutes + "\n"
                             + "Comment: " + this.Comment + "\n";
                 Log.Info(this.GetType(), "Email body: " + mail.Body);
 
