@@ -37,13 +37,13 @@ namespace SHBusinessLogic.Forms
             this.Phone0 = request["phone0"];
             this.City = request["city"];
             this.University = request["university"];
-            this.Group = request["group"];
-            this.PersonsCount = request["personscount"];
-            this.Date = request["date"];
-            this.TimeHours = request["timehours"];
-            this.TimeMinutes = request["timeminutes"];
+            //this.Group = request["group"];
+            //this.PersonsCount = request["personscount"];
+            //this.Date = request["date"];
+            //this.TimeHours = request["timehours"];
+            //this.TimeMinutes = request["timeminutes"];
             this.Comment = request["comment"];
-            this.HoneyPot = request["honeybear"];
+            //this.HoneyPot = request["honeybear"];
         }
 
         public string Name { get; private set; }
@@ -51,13 +51,13 @@ namespace SHBusinessLogic.Forms
         public string Phone { get; private set; }
         public string City { get; private set; }
         public string University { get; private set; }
-        public string Group { get; private set; }
-        public string PersonsCount { get; private set; }
-        public string Date { get; private set; }
-        public string TimeHours { get; private set; }
-        public string TimeMinutes { get; private set; }
+        //public string Group { get; private set; }
+        //public string PersonsCount { get; private set; }
+        //public string Date { get; private set; }
+        //public string TimeHours { get; private set; }
+        //public string TimeMinutes { get; private set; }
         public string Comment { get; private set; }
-        public string HoneyPot { get; private set; }
+        //public string HoneyPot { get; private set; }
         public const string SessionKey = "SH.Form.Submitted";
 
         /// <summary>
@@ -88,11 +88,11 @@ namespace SHBusinessLogic.Forms
                 errors.Add("Пожалуйста, заполните поле Город");
             }
 
-            if (!string.IsNullOrEmpty(this.HoneyPot))
-            {
-                errors.Add(
-                    "Пожалуйста, не заполняйте поле с пометкой IGNORE. Это для проверки, что Вы человек, а не спам бот.");
-            }
+            //if (!string.IsNullOrEmpty(this.HoneyPot))
+            //{
+            //    errors.Add(
+            //        "Пожалуйста, не заполняйте поле с пометкой IGNORE. Это для проверки, что Вы человек, а не спам бот.");
+            //}
 
             return errors;
         }
@@ -123,10 +123,10 @@ namespace SHBusinessLogic.Forms
                             + "Phone: " + "+375 " + this.Phone0 + " " + this.Phone + "\n"
                             + "City: " + this.City + "\n"
                             + "University: " + this.University + "\n"
-                            + "Group: " + this.Group + "\n"
-                            + "PersonsCount: " + this.PersonsCount + "\n"
-                            + "Date: " + this.Date + "\n"
-                            + "Time: " + this.TimeHours + ":" + this.TimeMinutes + "\n"
+                            //+ "Group: " + this.Group + "\n"
+                            //+ "PersonsCount: " + this.PersonsCount + "\n"
+                            //+ "Date: " + this.Date + "\n"
+                            //+ "Time: " + this.TimeHours + ":" + this.TimeMinutes + "\n"
                             + "Comment: " + this.Comment + "\n";
                 Log.Info(this.GetType(), "Email body: " + mail.Body);
 
