@@ -4,6 +4,8 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
+using SHBusinessLogic.Entities;
+
 namespace SHBusinessLogic.Forms
 {
     using System;
@@ -20,11 +22,37 @@ namespace SHBusinessLogic.Forms
 
         public CartModel()
         {
-            this.ItemIds = new List<int>();
+            this.Items = new List<CartItem>();
         }
 
-        public List<int> ItemIds { get; private set; }
+        public readonly List<CartItem> Items;
 
         public string BackUrl { get; set; }
+
+        public void AddItem(CartItem item)
+        {
+            if (item != null)
+            {
+                if (!this.Items.Contains(item))
+                {
+                    this.Items.Add(item);
+                }
+                else
+                {
+                    this.Items.Find(x => x.Id == item.Id).StuffsCount++;
+                }
+            }
+        }
+
+        public void RemoveItem(CartItem item)
+        {
+            if (item != null)
+            {
+                if (this.Items.Contains(item))
+                {
+                    this.Items.Remove(item);
+                }
+            }
+        }
     }
 }
