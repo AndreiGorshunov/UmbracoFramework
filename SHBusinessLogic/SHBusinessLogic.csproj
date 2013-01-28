@@ -43,6 +43,8 @@
     <Compile Include="Entities\CartDeliveryAddress.cs" />
     <Compile Include="Entities\CartItem.cs" />
     <Compile Include="Entities\CartPersonalData.cs" />
+    <Compile Include="Entities\CartDeliveryKind.cs" />
+    <Compile Include="Entities\Copy of CartDeliveryKind.cs" />
     <Compile Include="Forms\CartModel.cs" />
     <Compile Include="Forms\OrderPresentationFormModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

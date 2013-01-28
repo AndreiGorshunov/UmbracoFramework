@@ -41,6 +41,10 @@ namespace SHBusinessLogic.Forms
 
         public CartDeliveryAddress DeliveryAddress { get; set; }
 
+        public CartDeliveryKind? DeliveryKind { get; set; }
+
+        public CartBillingKind? BillingKind { get; set; }
+
         public readonly List<CartItem> Items;
 
         public string BackUrl { get; set; }
