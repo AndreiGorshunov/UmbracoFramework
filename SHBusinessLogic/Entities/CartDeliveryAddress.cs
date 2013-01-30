@@ -24,6 +24,15 @@ namespace SHBusinessLogic.Entities
 
         public string PostCode { get; private set; }
 
+        public bool IsEmpty 
+        {
+            get
+            {
+                return string.IsNullOrEmpty(this.Region) || string.IsNullOrEmpty(this.City) ||
+                       string.IsNullOrEmpty(this.Address) || string.IsNullOrEmpty(this.PostCode);
+            }
+        }
+
         public CartDeliveryAddress()
         {
             this.Region = this.City = this.Address = this.PostCode = string.Empty;

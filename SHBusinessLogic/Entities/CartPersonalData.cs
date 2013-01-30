@@ -24,6 +24,15 @@ namespace SHBusinessLogic.Entities
 
         public string Phone { get; private set; }
 
+        public bool IsEmpty
+        {
+            get
+            {
+                return string.IsNullOrEmpty(this.FirstName) || string.IsNullOrEmpty(this.LastName) ||
+                       string.IsNullOrEmpty(this.Email) || string.IsNullOrEmpty(this.Phone);
+            }
+        }
+
         public CartPersonalData()
         {
             this.FirstName = this.LastName = this.Email = this.Phone = string.Empty;

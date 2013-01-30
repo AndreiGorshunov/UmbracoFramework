@@ -27,6 +27,8 @@ namespace SHBusinessLogic.Forms
             this.CurrentStep = 1;
             this.IsModelValid = true;
             this.Items = new List<CartItem>();
+            this.OrderId = Guid.NewGuid();
+            this.OrderDate = DateTime.Now;
         }
 
         public int CurrentStep
@@ -44,6 +46,10 @@ namespace SHBusinessLogic.Forms
         public CartDeliveryKind? DeliveryKind { get; set; }
 
         public CartBillingKind? BillingKind { get; set; }
+
+        public Guid OrderId { get; private set; }
+
+        public DateTime OrderDate { get; private set; }
 
         public readonly List<CartItem> Items;
 
