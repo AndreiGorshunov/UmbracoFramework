@@ -16,7 +16,7 @@ namespace SHBusinessLogic.Forms
     /// <summary>
     /// TODO: Update summary.
     /// </summary>
-    public class CartModel
+    public class CartModel : FormBase
     {
         public static string SessionKey = "SH.Form.Cart";
 
@@ -50,6 +50,10 @@ namespace SHBusinessLogic.Forms
         public Guid OrderId { get; private set; }
 
         public DateTime OrderDate { get; private set; }
+
+        public string TotalPriceText { get; set; }
+        public string DeliveryText { get; set; }
+        public string BillingText { get; set; }
 
         public readonly List<CartItem> Items;
 

@@ -17,7 +17,7 @@ namespace SHBusinessLogic.Forms
     /// <summary>
     /// TODO: Update summary.
     /// </summary>
-    public class OrderPresentationFormModel
+    public class OrderPresentationFormModel : FormBase
     {
         /// <summary>
         /// Initializes a new instance of the OrderPresentationFormModel class
@@ -95,57 +95,6 @@ namespace SHBusinessLogic.Forms
             //}
 
             return errors;
-        }
-
-        /// <summary>
-        /// Method to send email
-        /// </summary>
-        /// <param name="from">Email from</param>
-        /// <param name="to">Email to</param>
-        /// <param name="subject">Email subject</param>
-        /// <param name="password">Account password</param>
-        /// <returns>Returns wether message has been sent successfully</returns>
-        public bool SendMessage(string from, string to, string subject, string password)
-        {
-            try
-            {
-                Log.Info(this.GetType(), "Start sending email:");
-                var mail = new MailMessage();
-                mail.From = new MailAddress(from);
-                mail.To.Add(to);
-                mail.Subject = subject;
-                mail.IsBodyHtml = false;
-                Log.Info(this.GetType(), "From email: " + mail.From);
-                Log.Info(this.GetType(), "To email: " + mail.To);
-                Log.Info(this.GetType(), "Subject email: " + mail.Subject);
-                mail.Body = "Была отправлена заявка на презентацию:\n\n"
-                            + "Name: " + this.Name + "\n"
-                            + "Phone: " + "+375 " + this.Phone0 + " " + this.Phone + "\n"
-                            + "City: " + this.City + "\n"
-                            + "University: " + this.University + "\n"
-                            //+ "Group: " + this.Group + "\n"
-                            //+ "PersonsCount: " + this.PersonsCount + "\n"
-                            //+ "Date: " + this.Date + "\n"
-                            //+ "Time: " + this.TimeHours + ":" + this.TimeMinutes + "\n"
-                            + "Comment: " + this.Comment + "\n";
-                Log.Info(this.GetType(), "Email body: " + mail.Body);
-
-                var smtp = new SmtpClient { Host = "smtp.gmail.com", Port = 587, EnableSsl = true };
-                smtp.EnableSsl = true;
-                var networkCred = new NetworkCredential(mail.From.Address, password);
-                smtp.UseDefaultCredentials = true;
-                smtp.Credentials = networkCred; 
-
-                smtp.Send(mail);
-                Log.Info(this.GetType(), "End sending email: success");
-                return true;
-            }
-            catch (Exception ex)
-            {
-                Log.Info(this.GetType(), "End sending email: failure");
-                Log.Error(this.GetType(), ex);
-                return false;
-            }
         }
     }
 }

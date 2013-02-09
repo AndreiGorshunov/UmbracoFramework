@@ -46,6 +46,7 @@
     <Compile Include="Entities\CartDeliveryKind.cs" />
     <Compile Include="Entities\CartBillingKind.cs" />
     <Compile Include="Forms\CartModel.cs" />
+    <Compile Include="Forms\FormBase.cs" />
     <Compile Include="Forms\OrderPresentationFormModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
