@@ -20,6 +20,8 @@ namespace SHBusinessLogic.Entities
 
         public int StuffsCount { get; set; }
 
+        public string StringView { get; set; }
+
         public Dictionary<string, string> Params { get; private set; }
 
         public CartItem(int id, Dictionary<string, string> param = null)

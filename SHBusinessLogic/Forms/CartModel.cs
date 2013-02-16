@@ -84,5 +84,17 @@ namespace SHBusinessLogic.Forms
                 }
             }
         }
+
+        public string StringifyCartItems()
+        {
+            return this.Items.Aggregate(
+                string.Empty, (current, cartItem) => current + cartItem.StringView + "\n");
+        }
+
+        public string StringifyCartItemsHtml()
+        {
+            return this.Items.Aggregate(
+                string.Empty, (current, cartItem) => current + cartItem.StringView + "<br/>");
+        }
     }
 }
