@@ -4,6 +4,7 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
+using System.Globalization;
 using SHBusinessLogic.Entities;
 
 namespace SHBusinessLogic.Forms
@@ -27,7 +28,7 @@ namespace SHBusinessLogic.Forms
             this.CurrentStep = 1;
             this.IsModelValid = true;
             this.Items = new List<CartItem>();
-            this.OrderId = Guid.NewGuid();
+            this.OrderId = DateTime.UtcNow.Ticks.ToString(CultureInfo.InvariantCulture);
             this.OrderDate = DateTime.Now;
         }
 
@@ -47,7 +48,7 @@ namespace SHBusinessLogic.Forms
 
         public CartBillingKind? BillingKind { get; set; }
 
-        public Guid OrderId { get; private set; }
+        public string OrderId { get; set; }
 
         public DateTime OrderDate { get; private set; }
 

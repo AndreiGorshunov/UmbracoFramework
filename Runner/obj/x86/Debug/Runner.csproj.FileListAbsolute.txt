@@ -13,3 +13,5 @@ D:\Studying\Umbraco\UmbracoFramework\Runner\obj\x86\Debug\Runner.pdb
 D:\Studying\Umbraco\UmbracoFramework\Runner\bin\Debug\Runner.exe
 D:\Studying\Umbraco\UmbracoFramework\Runner\bin\Debug\Runner.pdb
 D:\Studying\Umbraco\UmbracoFramework\Runner\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Work\Freelance\UmbracoFramework\Runner\obj\x86\Debug\Runner.exe
+D:\Work\Freelance\UmbracoFramework\Runner\obj\x86\Debug\Runner.pdb
