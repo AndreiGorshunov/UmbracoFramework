@@ -33,6 +33,20 @@ namespace UmbracoFramework.Utils
             }
         }
 
+        public static string GetMediaUrl(dynamic model, string imageFieldName, int widht, int height)
+        {
+            try
+            {
+                string url = GetMediaUrl(model, imageFieldName);
+                return GetImageGenUrl(url, widht, height);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(typeof(MediaHelper), ex);
+                return string.Empty;
+            }
+        }
+
         /// <summary>
         /// Gets the imagegen url for a image
         /// </summary>
