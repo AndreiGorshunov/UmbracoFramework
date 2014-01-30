@@ -1,30 +1,21 @@
-﻿// -----------------------------------------------------------------------
-// <copyright file="MediaHelper.cs" company="">
-// TODO: Update copyright text.
-// </copyright>
-// -----------------------------------------------------------------------
-
-using System.Xml;
-using umbraco.MacroEngines;
-using UmbracoFramework.Diagnostics;
+﻿using UmbracoFramework.Diagnostics;
 
 namespace UmbracoFramework.Utils
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
 
-    /// <summary>
-    /// TODO: Update summary.
-    /// </summary>
     public static class MediaHelper
     {
         public static string GetMediaUrl(dynamic model, string imageFieldName)
         {
             try
             {
-                return model.Media(imageFieldName).umbracoFile;
+                if (model != null && model.imageFieldName != null && model.Media(imageFieldName) != null)
+                {
+                    return model.Media(imageFieldName).umbracoFile;
+                }
+
+                return string.Empty;
             }
             catch (Exception ex)
             {

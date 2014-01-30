@@ -5,18 +5,16 @@ using umbraco.NodeFactory;
 namespace UmbracoFramework.Utils
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
 
     public static class SearchHelper
     {
-        private static Node homeNode;
+        private static Node _homeNode;
         public static Node HomeNode
         {
             get
             {
-                return homeNode ?? (homeNode = uQuery.GetNodesByXPath("descendant::*[@nodeName='Home']").FirstOrDefault());
+                return _homeNode ?? (_homeNode = uQuery.GetNodesByXPath("descendant::*[@nodeName='Home']").FirstOrDefault());
             }
         }
 
@@ -33,7 +31,7 @@ namespace UmbracoFramework.Utils
         public static dynamic GetNodeByName(DynamicNode model, string name)
         {
             return GetHomeNodeStrongTyped(model).Descendants(
-                x => string.Compare(x.Name, name, true) == 0).Items.FirstOrDefault();
+                x => string.Compare(x.Name, name, StringComparison.OrdinalIgnoreCase) == 0).Items.FirstOrDefault();
         }
 
         public static DynamicNode GetNodeByNameStrongTyped(DynamicNode model, string name)
@@ -44,7 +42,7 @@ namespace UmbracoFramework.Utils
         public static dynamic GetNodeByNameRelative(DynamicNode model, string name)
         {
             return model.Descendants(
-                x => string.Compare(x.Name, name, true) == 0).Items.FirstOrDefault();
+                x => string.Compare(x.Name, name, StringComparison.OrdinalIgnoreCase) == 0).Items.FirstOrDefault();
         }
 
         public static DynamicNode GetNodeByNameRelativeStrongTyped(DynamicNode model, string name)

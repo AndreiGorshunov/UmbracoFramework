@@ -18,3 +18,8 @@ D:\Work\Freelance\UmbracoFramework\UmbracoFramework\bin\Debug\UmbracoFramework.p
 D:\Work\Freelance\UmbracoFramework\UmbracoFramework\obj\Debug\UmbracoFramework.csprojResolveAssemblyReference.cache
 D:\Work\Freelance\UmbracoFramework\UmbracoFramework\obj\Debug\UmbracoFramework.dll
 D:\Work\Freelance\UmbracoFramework\UmbracoFramework\obj\Debug\UmbracoFramework.pdb
+D:\Github\UmbracoFramework\UmbracoFramework\bin\Debug\UmbracoFramework.dll
+D:\Github\UmbracoFramework\UmbracoFramework\bin\Debug\UmbracoFramework.pdb
+D:\Github\UmbracoFramework\UmbracoFramework\obj\Debug\UmbracoFramework.csprojResolveAssemblyReference.cache
+D:\Github\UmbracoFramework\UmbracoFramework\obj\Debug\UmbracoFramework.dll
+D:\Github\UmbracoFramework\UmbracoFramework\obj\Debug\UmbracoFramework.pdb
