@@ -28,6 +28,11 @@ namespace UmbracoFramework.Utils
             return model.AncestorOrSelf("Home");
         }
 
+        public static Node GetNodeByName(string name)
+        {
+            return uQuery.GetNodesByXPath(string.Format("descendant::*[@nodeName='{0}']", name)).FirstOrDefault();
+        }
+
         public static dynamic GetNodeByName(DynamicNode model, string name)
         {
             return GetHomeNodeStrongTyped(model).Descendants(
